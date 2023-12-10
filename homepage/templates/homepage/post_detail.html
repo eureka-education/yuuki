@@ -1,0 +1,13 @@
+{% extends 'homepage/base.html' %}
+
+{% block content %}
+    <div class="mt-3">
+        <h1>{{ post.title }}</h1>
+        {% if post.image %}
+            <img src="{{ post.image.url }}" class="mb-3" width="80%" alt="{{ post.title }}">
+        {% endif %}
+        <p>更新日：{{ post.updated_at | date }}</p>
+        <hr>
+        <p>{{ post.content }}</p>
+    </div>
+{% endblock content %}
