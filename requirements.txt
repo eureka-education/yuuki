@@ -1,4 +1,4 @@
-gnicorn
+gunicorn==21.2.0
 altgraph==0.17.4
 ansi2html==1.8.0
 anyio==4.0.0
